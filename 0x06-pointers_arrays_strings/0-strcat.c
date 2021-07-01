@@ -2,8 +2,8 @@
 
 /**
  * _strcat - function that concatenates two strings.
- * @dest :
- * @src :
+ * @dest : Prototype int.
+ * @src : Prototype int.
  * Return: dest
  */
 char *_strcat(char *dest, char *src)
