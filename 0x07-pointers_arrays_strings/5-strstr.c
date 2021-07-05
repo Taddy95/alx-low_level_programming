@@ -4,7 +4,7 @@
  *  _strstr - locating a substring
  *  @needle: Occurrence in a string
  *  @haystack: string to search
- *  return: pointer
+ *  Return: pointer
  */
 char *_strstr(char *haystack, char *needle)
 {
