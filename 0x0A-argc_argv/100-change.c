@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
-#include <stdlib.h>
 
-/** 
+/**
  * main - Find the smallest number of coins to make an amount of change
  * @argc: Arg count
  * @argv: Arrays string
@@ -18,30 +17,20 @@ int main(int argc, char *argv[])
 		while (cents > 0)
 		{
 			if (cents % 25 < cents)
-			{
 				cents -= 25;
 				coins++;
-			}
 			else if (cents % 5 < cents)
-			{
 				cents -= 5;
 				coins++;
-			}
 			else if (cents % 3 < cents)
-			{
 				cents -= 3;
 				coins++;
-			}
 			else if (cents % 2 < cents)
-			{
 				cents -= 2;
 				coins++;
-			}
 			else if (cents % 1 < cents)
-			{
 				cents -= 1;
 				coins++;
-			}
 		}
 	}
 	else
