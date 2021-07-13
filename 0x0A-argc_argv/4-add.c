@@ -5,17 +5,11 @@
  * main - program that adds positive numbers.
  * @argc: Arg size.
  * @argv: Arrays string.
- * Return: 1 and print error followed by a new line
- * if one of the number contains symbols that are not digits
+ * Return: 1 and print error followed by a new line...
  */
 int main(int argc, char *argv[])
 {
-	int sum;
-	int i;
-	int count;
-
-	sum = 0;
-	i = 0;
+	int sum = 0, i = 0, count;
 
 	if (argc == 1)
 	{
