@@ -3,6 +3,7 @@
 
 /**
  * init_dog - Prototype to initilize struct dog variable type
+ * @d: struct pointer
  * @name: Char for dog name
  * @age: float for dog age
  * @owner: char for dog owner
