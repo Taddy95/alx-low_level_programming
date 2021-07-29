@@ -16,29 +16,24 @@ int main(int argc, char *argv[])
 		cents = atoi(*(argv + 1));
 		while (cents > 0)
 		{
-			if (cents % 25 < cents)
+			if (cents % 10 < cents)
 			{
-				cents -= 25;
+				cents -= 10;
 				coins++;
-			}else if 
+			}
+			else if (cents % 100 < cents)
 			{
-				(cents % 5 < cents)
-				cents -= 5;
+				cents -= 100;
 				coins++;
-			}else if 
+			}
+			else if (cents % 101 < cents)
 			{
-				(cents % 3 < cents)
-				cents -= 3;
+				cents -= 101;
 				coins++;
-			}else if 
+			}
+			else if (cents % 13 < cents)
 			{
-				(cents % 2 < cents)
-				cents -= 2;
-				coins++;
-			}else if 
-			{
-				(cents % 1 < cents)
-				cents -= 1;
+				cents -= 13;
 				coins++;
 			}
 		}
